@@ -1,1 +1,1 @@
-# Flappy-horse-game-
+# Flappy-dog-game-
