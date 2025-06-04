@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Study Timer</h1>
+        <div class="timer-display">
+            <span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+        
+        <div class="controls">
+            <button id="start-btn"><i class="fas fa-play"></i> Start</button>
+            <button id="pause-btn" disabled><i class="fas fa-pause"></i> Pause</button>
+            <button id="reset-btn"><i class="fas fa-redo"></i> Reset</button>
+        </div>
+        
+        <div class="settings">
+            <h2>Set Timer</h2>
+            <div class="time-inputs">
+                <div>
+                    <label for="set-hours">Hours</label>
+                    <input type="number" id="set-hours" min="0" max="23" value="0">
+                </div>
+                <div>
+                    <label for="set-minutes">Minutes</label>
+                    <input type="number" id="set-minutes" min="0" max="59" value="25">
+                </div>
+                <div>
+                    <label for="set-seconds">Seconds</label>
+                    <input type="number" id="set-seconds" min="0" max="59" value="0">
+                </div>
+            </div>
+            <button id="set-btn"><i class="fas fa-check"></i> Set Timer</button>
+        </div>
+        
+        <div class="presets">
+            <h2>Quick Start</h2>
+            <button class="preset-btn" data-minutes="25">25 min (Pomodoro)</button>
+            <button class="preset-btn" data-minutes="50">50 min</button>
+            <button class="preset-btn" data-minutes="90">90 min</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
